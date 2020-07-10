@@ -1,9 +1,9 @@
-readme.md: guessinggame.sh
-	echo "## It's Time to Play the Guessing Game! ##" > readme.md
-	echo " *-Jimmy Phan*" >> readme.md
-	echo " " >> readme.md
-	echo " **guessinggame.sh initiated time:** " >> readme.md
-	ls -l readme.md | egrep -o "[A-S].+:[0-9]{2}" >> readme.md
-	echo "**Number of lines in our guessinggame.sh** " >> readme.md
-	wc -l guessinggame.sh | egrep -o "[0-9]+" >> readme.md
+README.md: guessinggame.sh
+	echo "## It's Time to Play the Guessing Game! ##" > README.md
+	echo " *-Jimmy Phan*" >> README.md
+	echo " " >> README.md
+	echo " **initiated time:** " >> README.md
+	date >> README.md
+	echo "**Number of lines in our guessinggame.sh** " >> README.md
+	wc -l guessinggame.sh | egrep -o "[0-9]+" >> README.md
 	
